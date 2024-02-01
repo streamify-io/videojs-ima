@@ -102,7 +102,7 @@ PlayerWrapper.prototype.playerDisposedListener = function() {
  */
 PlayerWrapper.prototype.onPlayerReady = function() {
   this.h5Player =
-      document.getElementById(
+      this.vjsPlayer.el().getRootNode().getElementById(
           this.getPlayerId()).getElementsByClassName(
               'vjs-tech')[0];
   this.daiController.onPlayerReady();
